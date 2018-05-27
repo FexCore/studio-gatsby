@@ -1,25 +1,7 @@
 @import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
 
-nav {
-  color: $white_navigation_text;
-  width: 100%;
-  ul{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    li{
-      font-family: $roboto_condensed;
-      display: inline-block;
-      padding: 0 15px;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-  }
-}
-
-//sugestion for mobile brakepoint+++560px;
+//sugestion for mobile brakepoint+++600px;
 .splash {
   display: flex;
   flex-direction: column;
@@ -36,7 +18,11 @@ nav {
     color: $white_navigation_text;
     font-weight: 300;
     font-size:60px;
+    text-align: center;
     strong{font-weight: bold;}
+  }
+  img{
+    margin-top: 5rem;
   }
 }
 
