@@ -13,16 +13,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  h2{
+  h2 {
     font-family: $roboto_condensed;
     color: $white_navigation_text;
     font-weight: 300;
-    font-size:60px;
+    font-size: 60px;
     text-align: center;
-    strong{font-weight: bold;}
+    z-index: 10;
+    strong {
+      font-weight: bold;
+    }
   }
-  img{
+  img {
     margin-top: 5rem;
+    z-index: 10;
   }
 }
 
@@ -34,6 +38,7 @@
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
+  z-index: 10;
 }
 .scroller {
   width: 10px;
@@ -42,11 +47,40 @@
   background-color: #fff;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
+.grid {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  background-color: transparent;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  display: flex;
+  z-index: 5;
+  div {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid red;
+    position: relative;
+    &:last-child{
+      border-right: 0;
+    }
+  }
+}
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
