@@ -1,2 +1,15 @@
 @import './HomeMiddleTop.module.scss';
 
+.top {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 180px;
+  background-image: url('../../../images/shelf-bg.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 790px;
+
+  .heading_wrapper {
+    margin-top: 167px;
+  }
+}

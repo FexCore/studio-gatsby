@@ -1,26 +1,16 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
 
 import styles from './GridOverlay.module.scss'
 
+const GridOverlay = props => (
+  <div className={styles.grid} {...props}>
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+)
 
-export default class GridOverlay extends Component {
-  constructor(props) {
-    super(props)
-    
-  }
-  
-
-  render() {
-    return (
-        <div className={styles.grid}>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    )
-  }
-}
+export default GridOverlay
