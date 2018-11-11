@@ -1,0 +1,25 @@
+@import './HomeMiddleTop.module.scss';
+
+.top {
+  background-image: url('../../../images/lamp-bg.jpg');
+  background-position: -242px center;
+  display: block;
+
+  @include media('<large-phone') {
+    background-position: -340px 99%;
+  }
+
+  .lamp_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .heading_wrapper {
+      margin-top: 200px;
+
+      @include media('<large-phone') {
+        margin-top: 0;
+      }
+    }
+  }
+}
