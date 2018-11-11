@@ -10,18 +10,60 @@
   h5,
   h6 {
     color: white;
+    font-family: $roboto_condensed;
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 16px;
+    margin: 1rem 0;
+  }
+  h6 {
+    font-size: 14px;
+  }
+}
+.title {
+  display: flex;
+	flex-direction: column;
+	a {
+		display: none;
+	}
+  @include media('>large-phone') {
+		justify-content: flex-end;
+		padding: 2rem;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+		transition: transform .5s ease;
+		a {
+			margin-top: 1rem;
+			display: block;
+		}
   }
 }
 .block {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: calc((100vw - 2rem) / 2);
   min-height: calc((100vw - 2rem) / 2);
-  border: 1px solid red;
-
+	padding-bottom: 1rem;
+	overflow: hidden;
   @include media('>large-phone') {
+    padding: 0;
     min-height: calc((100vw - 2rem) / 5);
     width: calc((100vw - 2rem) / 5);
+    &:hover {
+      cursor: pointer;
+      overflow: hidden;
+      .title {
+        transform: translateY(0);
+        transition: transform .5s ease;
+      }
+    }
   }
 }
 .image {
@@ -33,13 +75,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.title {
-  display: flex;
-  flex-direction: column;
-  @include media('>large-phone') {
-    display: none;
-  }
 }
 .latest {
   width: calc(100vw - 2rem);

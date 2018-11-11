@@ -21,33 +21,37 @@ const LatestProjects = () => {
       <div className={cn(style.block)}>
         <div className={style.image} style={{ backgroundImage: `url(${Prj1})` }}></div>
         <div className={style.title}>
-            <h5 className={style.name}>amer</h5>
-            <h5 className={style.where}>where</h5>
-            <h5 className={style.what}>what</h5>
+            <h5 className={style.name}>Hotel MERCURE</h5>
+            <h6 className={style.where}>Minsk Belaruse</h6>
+            <h6 className={style.what}>Interior design</h6>
+            <Button>view</Button>
         </div>
       </div>
       <div className={cn(style.block)}>
         <div className={style.image} style={{ backgroundImage: `url(${Prj2})` }}></div>
         <div className={style.title}>
-            <h5 className={style.name}>amer</h5>
-            <h5 className={style.where}>where</h5>
-            <h5 className={style.what}>what</h5>
+            <h5 className={style.name}>Hotel KARISMA</h5>
+            <h6 className={style.where}>Zivogosce, Croatia</h6>
+            <h6 className={style.what}>Architecture & Interior design</h6>
+            <Button>view</Button>
         </div>
       </div>
       <div className={cn(style.block)}>
         <div className={style.image} style={{ backgroundImage: `url(${Prj3})` }}></div>
         <div className={style.title}>
-            <h5 className={style.name}>amer</h5>
-            <h5 className={style.where}>where</h5>
-            <h5 className={style.what}>what</h5>
+            <h5 className={style.name}>Hotel MERCURE</h5>
+            <h6 className={style.where}>Minsk Belaruse</h6>
+            <h6 className={style.what}>Interior design</h6>
+            <Button>view</Button>
         </div>
       </div>
       <div className={cn(style.block)}>
         <div className={style.image} style={{ backgroundImage: `url(${Prj4})` }}></div>
         <div className={style.title}>
-            <h5 className={style.name}>amer</h5>
-            <h5 className={style.where}>where</h5>
-            <h5 className={style.what}>what</h5>
+            <h5 className={style.name}>Hotel KARISMA</h5>
+            <h6 className={style.where}>Zivogosce, Croatia</h6>
+            <h6 className={style.what}>Architecture & Interior design</h6>
+            <Button>view</Button>
         </div>
       </div>
     </div>
