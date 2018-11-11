@@ -1,0 +1,51 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
+.projects {
+  display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	h2 {
+		text-transform: uppercase;
+		color: white;
+	}
+	h5,h6 {
+		color: white;
+	}
+}
+.block {
+	display: flex;
+	flex-direction: column;
+	width: calc((100vw - 2rem)/2);
+	min-height: calc((100vw - 2rem)/2);
+	border:1px solid red;
+	
+	@include media('>large-phone') {
+		min-height: calc((100vw - 2rem)/5);
+    width: calc((100vw - 2rem)/5);
+	}
+}
+.image {
+	width: 100%;
+	height: calc((100vw - 2rem)/2);
+	@include media('>large-phone') {
+		height: calc((100vw - 2rem)/5);
+	}
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.title {
+	display: flex;
+	flex-direction: column;
+	@include media('>large-phone') {
+		display: none;
+	}
+}
+.latest {
+	width: calc(100vw - 2rem);
+	height: 10rem;
+  @include media('>large-phone') {
+		height: calc((100vw - 2rem)/5);
+    width: calc((100vw - 2rem)/5);
+  }
+}
