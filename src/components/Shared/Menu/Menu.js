@@ -3,9 +3,6 @@ import Link from 'gatsby-link'
 
 import styles from './Menu.module.scss'
 
-// const Menu = () => (
-
-// );
 
 export default class Menu extends Component {
   constructor(props) {

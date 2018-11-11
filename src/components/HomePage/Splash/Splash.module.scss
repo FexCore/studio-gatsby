@@ -50,27 +50,7 @@
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
-.grid {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  background-color: transparent;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
-  display: flex;
-  z-index: 5;
-  div {
-    width: 25%;
-    height: 100%;
-    border-right: 1px solid red;
-    position: relative;
-    &:last-child{
-      border-right: 0;
-    }
-  }
-}
+
 @keyframes scroll {
   0% {
     opacity: 0;
