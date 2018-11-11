@@ -1,0 +1,14 @@
+@import '../../../sass/variables';
+
+.find_out{
+  display: flex;
+  flex-direction: column;
+
+  p{
+    max-width: 25.875rem;
+    font-family: $roboto;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: $p_on_light_bg;
+  }
+}

@@ -1,24 +1,41 @@
 @import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
 
 .top{
   display: flex;
   min-height: 550px;
-  width: 100%;
   background-image: url('../../../images/chair-bg.jpg');
   background-position: left center;
   background-repeat: no-repeat;
   justify-content: flex-end;
   padding-top: 180px;
+  padding-right: 180px;
   align-items: flex-start;
+
+  @include media('<large-phone'){
+    background-position: -310px bottom; 
+    justify-content: flex-start;
+    padding: 75px 20px 310px;
+    background-position: 207% 97%;
+  }
 
   .heading_wrapper{
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 5;
+    align-items: flex-start;
 
     h3{
       font-family: $roboto_condensed;
       font-weight: 300;
       font-size: 3.75rem;
+      margin-bottom: 63px;
+      margin-top: 20px;
+
+      > span{
+        font-weight: 700;
+      }
     }
   }
 }
