@@ -12,10 +12,9 @@
   align-items: flex-start;
 
   @include media('<large-phone') {
-    background-position: -310px bottom;
     justify-content: flex-start;
     padding: 75px 20px 310px;
-    background-position: 234% 99%;
+    background-position: -354px 99%;
   }
 
   .heading_wrapper {
