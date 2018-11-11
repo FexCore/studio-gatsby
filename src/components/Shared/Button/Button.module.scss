@@ -1,0 +1,20 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
+.btn {
+  border: 1px solid $btn_border_on_light;
+  text-decoration: none;
+  color: $btn_text;
+  min-width: 200px;
+  padding: 1rem;
+  font-family: $roboto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 0.75rem;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.ondark {
+  border-color: $btn_border_on_dark;
+}

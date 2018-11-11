@@ -1,5 +1,9 @@
 import React from 'react'
 import cn from 'classnames'
+
+import Heading2 from '../Heading2/Heading2'
+import Button from '../Button/Button'
+
 import style from './LatestProjects.module.scss'
 
 import Prj1 from '../../../images/project-1.jpg'
@@ -11,7 +15,8 @@ const LatestProjects = () => {
   return (
     <div className={style.projects}>
       <div className={cn(style.block, style.latest)}>
-        <h2>Latest Projects</h2>
+        <Heading2 color="#333">Latest  Projects</Heading2>
+        <Button href="#" ondark>All projects</Button>
       </div>
       <div className={cn(style.block)}>
         <div className={style.image} style={{ backgroundImage: `url(${Prj1})` }}></div>
