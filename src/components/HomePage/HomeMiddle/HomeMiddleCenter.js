@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './HomeMiddleTop.module.scss'
+import styles from './HomeMiddleCenter.module.scss'
 import Container from '../../Shared/Container'
 import Heading2 from '../../Shared/Heading2'
 import FindOutMore from '../../Shared/FindOutMore'
 
-const HomeMiddleTop = () => (
+const HomeMiddleCenter = () => (
   <Container>
     <div className={styles.top}>
       <div className={styles.heading_wrapper}>
@@ -25,4 +25,4 @@ const HomeMiddleTop = () => (
   </Container>
 )
 
-export default HomeMiddleTop
+export default HomeMiddleCenter
