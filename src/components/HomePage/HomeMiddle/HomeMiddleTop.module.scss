@@ -1,0 +1,24 @@
+@import '../../../sass/variables';
+
+.top{
+  display: flex;
+  min-height: 550px;
+  width: 100%;
+  background-image: url('../../../images/chair-bg.jpg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  padding-top: 180px;
+  align-items: flex-start;
+
+  .heading_wrapper{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      font-family: $roboto_condensed;
+      font-weight: 300;
+      font-size: 3.75rem;
+    }
+  }
+}

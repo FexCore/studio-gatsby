@@ -1,0 +1,21 @@
+@import '../../../sass/variables';
+
+.heading {
+  font-family: $roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: $heading_text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+
+  &::before {
+    content: '';
+    width: 36px;
+    height: 2px;
+    background-color: $heading_text;
+    margin-right: 25px;
+  }
+}

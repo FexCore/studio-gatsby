@@ -10,6 +10,7 @@ $dots_line:                 #333333;
 $btn_border_on_light:       #d2d2d2;
 $btn_border_on_dark:        #313131;
 $overlap_grid:              rgba(64,64,64,.6);
+$home_middle_bg:            #ebebeb;
 
 
 // fonts
@@ -20,3 +21,6 @@ $roboto_condensed:       'Roboto Condensed', $backup-fonts;
 
 //z-index
 $menu_z_index:       999;
+
+//container max width
+$container_max_width: 1200px;
