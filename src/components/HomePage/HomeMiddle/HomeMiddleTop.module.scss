@@ -10,4 +10,15 @@
   justify-content: flex-end;
   padding-top: 180px;
   align-items: flex-start;
+
+  .heading_wrapper{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      font-family: $roboto_condensed;
+      font-weight: 300;
+      font-size: 3.75rem;
+    }
+  }
 }
