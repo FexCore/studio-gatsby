@@ -65,6 +65,11 @@
       }
     }
   }
+  @include media('>='+$container_max_width) {
+    min-height: $container_max_width / 5;
+    max-width: $container_max_width / 5;
+    max-height: $container_max_width / 5;
+  }
 }
 .image {
   width: 100%;
