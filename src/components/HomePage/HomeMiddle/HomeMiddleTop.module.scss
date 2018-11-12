@@ -1,39 +1,58 @@
 @import '../../../sass/variables';
 @import '../../../sass/mixins/main.scss';
 
-.top{
+.top {
   display: flex;
-  min-height: 550px;
+  min-height: 930px;
   background-image: url('../../../images/chair-bg.jpg');
   background-position: left center;
   background-repeat: no-repeat;
   justify-content: flex-end;
-  padding-top: 180px;
   padding-right: 180px;
   align-items: flex-start;
 
-  @include media('<large-phone'){
-    background-position: -310px bottom; 
+  @include media('<large-phone') {
     justify-content: flex-start;
     padding: 75px 20px 310px;
-    background-position: 207% 97%;
+    background-position: -354px 99%;
   }
 
-  .heading_wrapper{
+  .heading_wrapper {
     display: flex;
     flex-direction: column;
     position: relative;
     z-index: 5;
     align-items: flex-start;
+    margin-top: 237px;
 
-    h3{
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../../../images/pattern2-plus.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 202px;
+      height: 424px;
+      top: 0;
+      right: -94px;
+
+      @include media('<large-phone') {
+        right: 0;
+      }
+    }
+
+    @include media('<large-phone') {
+      margin-top: 0;
+    }
+
+    h3 {
       font-family: $roboto_condensed;
       font-weight: 300;
       font-size: 3.75rem;
       margin-bottom: 63px;
       margin-top: 20px;
 
-      > span{
+      > span {
         font-weight: 700;
       }
     }

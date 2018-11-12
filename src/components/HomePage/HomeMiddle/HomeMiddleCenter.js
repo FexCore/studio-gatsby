@@ -8,11 +8,12 @@ const HomeMiddleCenter = () => (
   <Container>
     <div className={styles.top}>
       <div className={styles.heading_wrapper}>
-        <Heading2>what we do</Heading2>
+        <Heading2>how we do</Heading2>
         <h3>
-          Creative<br />
-          <span>architecture</span>
-          <br />studio
+          Comlete <span>
+            design <br /> &amp; development<br />
+          </span>
+          process
         </h3>
         <FindOutMore>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas

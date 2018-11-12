@@ -1,2 +1,24 @@
 @import './HomeMiddleTop.module.scss';
 
+.top {
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 180px;
+  background-image: url('../../../images/shelf-bg.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 790px;
+
+  @include media('<large-phone') {
+    padding-left: 20px;
+    background-position: 0 403px;
+  }
+
+  .heading_wrapper {
+    margin-top: 167px;
+
+    @include media('<large-phone') {
+      margin-top: 0;
+    }
+  }
+}
