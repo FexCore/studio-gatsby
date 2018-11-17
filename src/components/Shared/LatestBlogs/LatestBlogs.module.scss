@@ -1,0 +1,93 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
+.blogs {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 50%;
+  min-height: 200px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  &:nth-child(2) {
+    width: 100%;
+    min-height: 230px;
+    h3 {
+      width: 50%;
+    }
+    @include media('>large-phone') {
+      min-height: 300px;
+      width: 200px;
+      h3 {
+        width: 100%;
+      }
+    }
+  }
+  h2 {
+    justify-content: flex-start;
+  }
+  h3 {
+    color: white;
+    font-family: $roboto_condensed;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    &:before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 6rem;
+      background-color: #fff;
+      margin-right: 1rem;
+    }
+  }
+  p {
+    color: $p_on_dark_bg;
+    font-family: $roboto;
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  @include media('>large-phone') {
+    width: 200px;
+    justify-content: space-between;
+  }
+}
+.all {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  h2 {
+    width: calc(100% - 200px);
+    margin-top: 12px;
+  }
+  @include media('>large-phone') {
+    flex-direction: column;
+    width: calc((100vw - 2rem) / 5);
+    a {
+      order: 2;
+    }
+    h2 {
+      width: 100%;
+    }
+  }
+}
+.plus {
+  width: 100%;
+  height: 100px;
+  background-image: url('../../../images/pattern-plus.png');
+  background-size: 30px;
+}
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
