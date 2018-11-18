@@ -13,8 +13,15 @@
   cursor: pointer;
   &:hover {
     text-decoration: none;
+    color: white;
+    background-color: black;
   }
 }
 .ondark {
   border-color: $btn_border_on_dark;
+  &:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
 }
