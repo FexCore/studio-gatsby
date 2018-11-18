@@ -1,5 +1,15 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins/main.scss';
 .footer {
     display: flex;
     padding: 1rem;
     background: black;
+    .row {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        @include media('>large-phone') {
+            flex-direction: row;
+        }
+    }
 }

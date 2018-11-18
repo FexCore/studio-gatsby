@@ -1,0 +1,10 @@
+@import '../../../sass/variables';
+.copyright {
+  width: 100%;
+  padding: 1rem 0;
+  font-family: $roboto;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $p_on_dark_bg;
+}

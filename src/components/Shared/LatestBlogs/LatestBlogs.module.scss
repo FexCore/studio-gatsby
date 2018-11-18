@@ -1,8 +1,7 @@
 @import '../../../sass/variables';
 @import '../../../sass/mixins/main.scss';
 .blogs {
-  width: 100%;
-  display: flex;
+  display: inline-flex;
   padding: 1rem 0;
   flex-wrap: wrap;
 }
