@@ -11,7 +11,8 @@
 
   @include media('<large-phone') {
     padding-left: 20px;
-    background-position: 0 403px;
+    background-position: right -174px bottom 0;
+    background-size: contain
   }
 
   .heading_wrapper {
