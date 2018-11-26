@@ -18,4 +18,10 @@
     background-color: $heading_text;
     margin-right: 25px;
   }
+  &.white {
+    color: white;
+    &::before {
+      background-color: white;
+    }
+  }
 }

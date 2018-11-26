@@ -1,0 +1,41 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins/main';
+.jumboContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../../../images/blog-pic-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jumboContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+  color: white;
+
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 50px;
+  font-family: $roboto_condensed;
+  font-weight: 100;
+  h3 {
+    width: 75%;
+    margin: 1rem 0;
+    @include media('>tablet') {
+      width: 50%;
+    }
+  }
+  strong {
+    margin: 1rem 0;
+  }
+}
